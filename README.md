@@ -1,1 +1,3 @@
-# google-landing-page-clone
+# google-landingpage-clone
+
+This project is a google landing page clone build using HTML and CSS.
