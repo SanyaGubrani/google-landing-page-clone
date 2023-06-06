@@ -28,7 +28,7 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 13px;
+    padding-top: 11px;
     padding-right: 10px;
     justify-content: end;
     font-size: 20px;
@@ -74,9 +74,12 @@ li {
 }
 
 .container .logo{
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     zoom: 125%;
 }
+
+
+/*Search-box */
 
 .search-box{
     border: 1px solid rgba(176, 173, 173, 0.414);
@@ -87,7 +90,23 @@ li {
     justify-content: space-between;
     width: 40%;
     height: 58px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.search-box::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -8px;
+    border-radius: 50px;
+    z-index: -1;
+}
+  
+.search-box:hover {
+    box-shadow: 0 0 8px 2px rgba(176, 173, 173, 0.414);
 }
 
 .search-input {
@@ -124,3 +143,29 @@ li {
     height: 25px;
     width: 20px;
 }
+
+/* Boxes */
+
+.boxes ul{
+    display: flex;
+    align-items: center;
+}
+
+.boxes ul li{
+    border: 1px solid #f8f9fa;
+    background-color: #f3f5f8d7;
+    border-radius: 4px;
+    height: 45px;
+    width: 190px;
+    padding: 12px 23px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.boxes ul li:nth-of-type(1){
+    margin-right: 20px;
+}
+
