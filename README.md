@@ -2,4 +2,4 @@
 
 This project is a google landing page clone build using HTML and CSS.
 
-<img src="images/ouput.png">
+[image1]!("images\output.png")
